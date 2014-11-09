@@ -1,0 +1,24 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Kosher</title>
+    <link rel='stylesheet' href='@routes.Assets.versioned("lib/bootstrap/css/bootstrap.css")'>
+    <link rel='shortcut icon' type='image/png' href='@routes.Assets.versioned("images/favicon.png")'>
+</head>
+
+<body ng-controller="myController">
+<div>
+    @content<br>
+    <textarea ng-model="myRequest" rows="10" cols="100" wrap="off" required></textarea>
+    <br>
+    <button type="submit" class="btn btn-default" ng-click="submitRequest()">Submit</button><br>
+    <textarea ng-model="myResponse" rows="10" cols="100" wrap="off"></textarea>
+</div>
+<script type='text/javascript' src='@routes.Assets.versioned("lib/jquery/jquery.js")'></script>
+<script type='text/javascript' src='@routes.Assets.versioned("lib/bootstrap/js/bootstrap.js")'></script>
+<script type='text/javascript' src='@routes.Assets.versioned("lib/angularjs/angular.js")'></script>
+<script type='text/javascript' src='@routes.Assets.at("app/myapp.js")'></script>
+</body>
+</html>
