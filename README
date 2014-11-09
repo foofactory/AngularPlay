@@ -1,4 +1,14 @@
-This is your new Play application
-=================================
+Template AngularJS Webapp using WebJars
+=======================================
 
-This file will be packaged with your application, when using `activator dist`.
+AngularJS files in app/assets/app
+AngularJS controller communicates with Scala controller via routing
+Makes developing REST APIs easy as cake
+Decouples views from Play controller even further
+You could even go so far as to remove the unidirectional Play bindings entirely
+
+If IntelliJ Scala plugin throws syntax errors:
+1. Close IntelliJ
+2. Delete .idea folder and *.iml files
+3. In project root run `sbt idea`
+4. Syntax errors should be gone
